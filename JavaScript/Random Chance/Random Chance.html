@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Chance</title>
+	<meta charset="UTF-8"> 
+	<script type="text/javascript">
+
+	function playslots(numberofquarters){
+		while(numberofquarters>0){
+			var win = Math.floor(Math.random()*100);
+			if(win == 1){
+				var amountwon = Math.random()*50+50
+				return amountwon + numberofquarters
+			}
+		}
+		return 0
+	}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
