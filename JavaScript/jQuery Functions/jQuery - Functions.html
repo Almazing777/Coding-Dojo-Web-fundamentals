@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery demo</title>
+
+	<style>
+
+	.selected {
+		color:blue;
+	}
+
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#myParagraph').click(function(){
+				alert('this is click function')
+			});
+
+			$('#hide').click(function(){
+				$('p').hide(), alert('the text is hidden')
+			});
+
+			$('#show').click(function(){
+				$('p').show()
+			});
+
+			$('#sdown').click(function(){
+				$('p').slideDown()
+			});
+
+
+			$('#sUp').click(function(){
+				$('p').slideUp()
+			});
+
+
+			$('#stoggle').click(function(){
+				$('p').slideToggle()
+			});			
+
+
+			$('#fadeIn').click(function(){
+				$('p').fadeIn()
+			});
+
+			$('#fadeOut').click(function(){
+				$('p').fadeOut()
+			});
+
+
+			$('#addClass').click(function(){
+				$('p').addClass("selected"), alert("the text is blue now")
+			});
+
+
+			$('#before').click(function(){
+				$('p').before("<b> Hello </b>")
+			});
+
+
+			$('#after').click(function(){
+				$('p').after("<b> Hello </b>")
+			});
+
+
+			$('#append').click(function(){
+				$('p').append("<strong> Hello </strong>")
+			});
+
+
+			$('#html').click(function(){
+				$('p').html("<span class='red'> Hello <b> Again </b></span>")
+			});
+
+
+			$('#attr').click(function(){
+				$('p').attr("selected")
+			});
+
+			$('#attr').click(function(){
+				$('p').attr()
+			});
+
+			$('#val').click(function(){
+				$('p').val()
+			});
+
+			$('#text').click(function(){
+				$('p').text("this is new text")
+			});
+
+			$('#data').click(function(){
+				$('p').data("7")
+			});
+		})
+
+	</script>
+		
+
+</head>
+	<h1 style="font-size: 16pt" > This is my jQuery Functions Assignment </h1>
+
+	<p> This button will alert the click function! </p>
+	<button id='myParagraph'> Click me to change the paragraph! </button>
+
+	<p> This button will hide the paragraph! </p>
+	<button id='hide'> Click me to hide the paragraph! </button>
+
+	<p> This button will show the paragraph! </p>
+	<button id='show'> Click me to show the paragraph! </button>
+
+	<p> This button will show and hide the paragraph! </p>
+	<button id='toggle'> Click me to toggle the paragraph! </button>
+
+	<p> This button will slide down the hidden paragraph! </p>
+	<button id='sdown'> Click me to slide down the paragraph! </button>
+
+	<p> This button will hide the paragraph! </p>
+	<button id='sUp'> Click me to slide up the paragraph! </button>
+
+	<p> This button will show or hide with a sliding motion the paragraph! </p>
+	<button id='slideToggle'> Click me to show or hide the paragraph! </button>
+
+	<p> This button will fadein the paragraph! </p>
+	<button id='fadeIn'> Click me to fade in the paragraph! </button>
+
+	<p> This button will fadeout the paragraph! </p>
+	<button id='fadeOut'> Click me to fadeout the paragraph! </button>
+
+	<p> This button will addClass the paragraph! </p>
+	<button id='addClass'> Click me to addClass the paragraph! </button>
+
+	<p> This button will insert some HTML before the paragraph! </p>
+	<button id='before'> Click me to invoke .before the paragraph! </button>
+
+	<p> This button will insert some HTML after the paragraph! </p>
+	<button id='after'> Click me to invoke .after the paragraph! </button>
+
+	<p> This button will append the paragraph! </p>
+	<button id='append'> Keep clicking to append the paragraph! </button>
+
+	<p> This button will html the paragraph! </p>
+	<button id='html'> Click me to html the paragraph! </button>
+
+	<p> This button will add attr the paragraph! </p>
+	<button id='attr'> Click me to add attr the paragraph! </button>
+
+	<p> This will give the value of whatever you type the paragraph! </p>
+	<input type="text" value="some text">
+
+	<p> This button will change (.text) the paragraph! </p>
+	<button id='text'> Click me to change paragraph! </button>
+
+	<p> This button will store the paragraph! </p>
+	<button id='data'> My lucky number is <span></span> </button>
+
+</body>
+</html>
